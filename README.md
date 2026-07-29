@@ -22,5 +22,3 @@ Evaluated on the ISSIA-CNR Soccer dataset (video sequences 1–4 for training, s
 - Every temporal fusion variant outperforms the single-frame baseline.
 - **Variance fusion** achieves the best overall performance (mAP 0.7618), driven by a strong Player AP (0.8631) — players are large, spatially stable targets, so a simple per-pixel variance across frames reliably captures where movement is happening without needing to learn anything.
 - **Attention fusion** is strongest specifically for **Ball AP** (0.8161) — the ball is small and frequently occluded or blurred across frames, so an adaptive, learned weighting of "which frame to trust" outperforms treating all frames equally.
-
-Training/validation loss curves and qualitative detection outputs for each configuration are available in `main.ipynb`.
